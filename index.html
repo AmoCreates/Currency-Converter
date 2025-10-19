@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="form">
+            
+            <h1>Currency Converter</h1>
+
+            <div id="amount">
+                <p>Enter Amount</p>
+                <input type="number" value = "100">
+            </div>
+
+            <div id="exchange">
+                <div id="from">
+                    <p>From</p>
+                    <div class ="select_container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name = "from"></select>
+                    </div>
+                </div>
+                
+                <div id="to">
+                    <p>To</p>
+                    <div class ="select_container">
+                        <label for="slct">
+                            <img src="https://flagsapi.com/IN/flat/64.png">
+                        </label>
+                        <select id="slct" name = "to"></select>
+                    </div>
+                </div>
+            
+            </div>
+        
+            <div id="msg">
+                Exchange rate
+            </div>
+
+            <button id="btn">Get Exchange Rate</button>
+        </div>
+    </div>
+
+    <script src="country.js"></script>
+    <script src="converter.js"></script>
+</body>
+</html>
